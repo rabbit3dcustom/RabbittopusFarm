@@ -7,6 +7,24 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# Client
+/client/assets/js
+/client/assets/css
+/client/build/*
+/client/node_modules/
+
+#Server
+/server/middleware/db.js
+/server/node_modules/
+
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Ignore any local release zips
+octofarm.zip
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -37,10 +55,6 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
